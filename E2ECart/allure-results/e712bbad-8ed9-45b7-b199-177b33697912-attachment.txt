@@ -1,0 +1,50 @@
+Element not found or not visible within the timeout: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('div li').first() to be visible
+
+    at CartPage.verifyProductInCart (C:\Users\SREE\E2ECart\tests\Pages\AddCart.spec.ts:33:49)
+    at C:\Users\SREE\E2ECart\tests\Pages\Order.spec.ts:84:27 {
+  name: 'TimeoutError',
+  [Symbol(step)]: {
+    stepId: 'pw:api@15',
+    location: {
+      file: 'C:\\Users\\SREE\\E2ECart\\tests\\Pages\\AddCart.spec.ts',
+      line: 33,
+      column: 49,
+      function: 'CartPage.verifyProductInCart'
+    },
+    category: 'pw:api',
+    title: "Wait for selector locator('div li').first()",
+    apiName: 'locator.waitFor',
+    params: {
+      selector: 'div li >> nth=0',
+      strict: true,
+      omitReturnValue: true,
+      state: 'visible',
+      timeout: 10000
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@15',
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1754931166528,
+    error: {
+      message: 'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('div li').first() to be visible\x1B[22m\n",
+      stack: 'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('div li').first() to be visible\x1B[22m\n" +
+        '\n' +
+        '    at CartPage.verifyProductInCart (C:\\Users\\SREE\\E2ECart\\tests\\Pages\\AddCart.spec.ts:33:49)\n' +
+        '    at C:\\Users\\SREE\\E2ECart\\tests\\Pages\\Order.spec.ts:84:27',
+      cause: undefined
+    }
+  }
+}

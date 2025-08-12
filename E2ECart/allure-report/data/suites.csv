@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6989","@E-KART Test for IPHONE 13 PRO","Chrome Worker","Mon Aug 11 10:36:02 IST 2025","passed","Mon Aug 11 10:36:09 IST 2025","","Pages\Order.spec.ts","",""
+"","6865","@E-KART Test for ADIDAS ORIGINAL","Chrome Worker","Mon Aug 11 10:36:09 IST 2025","passed","Mon Aug 11 10:36:16 IST 2025","","Pages\Order.spec.ts","",""
+"","11541","@E-KART Test for IPHONE 13 PRO","firefox","Mon Aug 11 10:34:41 IST 2025","passed","Mon Aug 11 10:34:52 IST 2025","","Pages\Order.spec.ts","",""
+"","9317","@E-KART Test for ADIDAS ORIGINAL","firefox","Mon Aug 11 10:34:54 IST 2025","passed","Mon Aug 11 10:35:04 IST 2025","","Pages\Order.spec.ts","",""

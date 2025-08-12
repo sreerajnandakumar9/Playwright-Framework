@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"ed39c131db56604842b18253a0c76267","name":"firefox","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"uid":"602596b7ea670ab9823fbef807ff5459","name":"Chrome Worker","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}

@@ -1,0 +1,30 @@
+{
+  "name": "cart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test Order.spec.ts --config playwright.config.ts",
+    "suite":"npx playwright test Order.spec.ts --grep @E-KART --reporter=line,allure-playwright",
+    "allure:generate": "allure generate ./allure-results --clean",
+    "report": "allure open"
+  },
+  "keywords": [],
+  "author": "Sreeraj",
+  "license": "ISC",
+  "description": "E2E Use Case for Cart",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^22.14.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "playwright": "^1.51.1",
+    "playwright-core": "^1.51.1",
+    "undici-types": "^6.21.0"
+  }
+}

@@ -1,0 +1,10 @@
+IPHONE 13 PRO added to cart
+Is IPHONE 13 PRO visible in cart: true
+Is IPHONE 13 PRO in cart: true
+Attempting to add product: IPHONE 13 PRO
+sreeb416@gmail.com
+Order button is visible.
+Order placed successfully.
+Order ID: THANKYOU FOR THE ORDER.
+Order ID from label: 6899774b6f585eb60d6e1cb6
+Page Title: Your Orders
