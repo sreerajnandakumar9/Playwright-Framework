@@ -11,7 +11,7 @@ export class CheckOut {
     this.page = page;
     this.item = this.page.locator("div li")
   }
-
+// This method constructs a locator for the product name based on the provided product name string.
   private productNameLocator(productName: string) {
     return `h3:has-text('${productName}')`;
   }
