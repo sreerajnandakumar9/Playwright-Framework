@@ -2,7 +2,8 @@ import {test,expect } from "@playwright/test";
 import {Customtest} from "../Utilities/test-base";
 import { USERS } from "../Utilities/constants";
 import { POManager } from "../PageRepo/POManager";
-const Dataset = JSON.parse(JSON.stringify(require("../Utilities/TestSet.json")));
+import DatasetJson from "../Utilities/TestSet.json";
+const Dataset = JSON.parse(JSON.stringify(DatasetJson));
 //parallel or serial execution
 //test.describe.configure({ mode: 'serial' }); 
 // // Ensure tests run in serial to avoid conflicts
@@ -34,6 +35,7 @@ Customtest(`E KART test`, async ({page,testDataForOrder}) => {
   await cartPage.addProductToCart(productName);
 
   // Step 3: Verify product in cart
+  await page.waitForLoadState('networkidle');
   const isProductInCart = await cartPage.verifyProductInCart(productName);
   console.log(`Is ${productName} in cart: ${isProductInCart}`);
   expect(isProductInCart).toBeTruthy();

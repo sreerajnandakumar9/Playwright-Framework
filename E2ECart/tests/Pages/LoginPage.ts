@@ -16,6 +16,7 @@ export class LoginPage {
 
   async navigateToLoginPage() {
     await this.page.goto('https://rahulshettyacademy.com/client');
+    await this.page.waitForLoadState('networkidle');
   }
 
   async login(email: string, password: string) {

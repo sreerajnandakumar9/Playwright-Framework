@@ -1,0 +1,51 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Automation Automation Practice":
+    - /url: ""
+    - heading "Automation" [level=3]
+    - paragraph: Automation Practice
+  - list:
+    - listitem:
+      - button " HOME"
+    - listitem
+    - listitem:
+      - button " ORDERS"
+    - listitem:
+      - button " Cart"
+    - listitem:
+      - button "Sign Out"
+- paragraph: Home | Search
+- heading "Filters" [level=4]
+- textbox "search"
+- heading "Price Range" [level=6]
+- textbox "Min Price"
+- textbox "Max Price"
+- heading "Categories" [level=6]
+- text: 
+- checkbox
+- text: fashion
+- checkbox
+- text: electronics
+- checkbox
+- text: household
+- heading "Sub Categories" [level=6]
+- text: 
+- checkbox
+- text: t-shirts
+- checkbox
+- text: shirts
+- checkbox
+- text: shoes
+- checkbox
+- text: mobiles
+- checkbox
+- text: laptops
+- heading "Search For" [level=6]
+- text: 
+- checkbox
+- text: men
+- checkbox
+- text: women Showing results | User can only see maximum 9 products on a page Design and Developed By - Kunal Sharma Login Successfully
+```

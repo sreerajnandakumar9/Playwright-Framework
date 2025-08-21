@@ -1,0 +1,10 @@
+ADIDAS ORIGINAL added to cart
+Is ADIDAS ORIGINAL visible in cart: true
+Is ADIDAS ORIGINAL in cart: true
+Attempting to add product: ADIDAS ORIGINAL
+srjthelegend@gmail.com
+Order button is visible.
+Order placed successfully.
+Order ID: THANKYOU FOR THE ORDER.
+Order ID from label: 68a75ee1d2e3f0f153beb4e9
+Page Title: Your Orders

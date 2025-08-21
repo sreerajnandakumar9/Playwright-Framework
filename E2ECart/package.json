@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test Order.spec.ts --config playwright.config.ts",
-    "suite":"npx playwright test Order.spec.ts --grep @E-KART --reporter=line,allure-playwright",
+    "test": "npx playwright test Order.spec.ts --config --config=playwright.service.config.ts --workers=2",
+    "suite": "npx playwright test Order.spec.ts --grep @E-KART --reporter=line,allure-playwright",
+    "e2e": "npx playwright test Order.spec.ts --config=playwright.service.config.ts --workers=1",
     "allure:generate": "allure generate ./allure-results --clean",
     "report": "allure open"
   },
@@ -13,6 +14,7 @@
   "license": "ISC",
   "description": "E2E Use Case for Cart",
   "devDependencies": {
+    "@azure/microsoft-playwright-testing": "^1.0.0-beta.7",
     "@playwright/test": "^1.54.2",
     "@types/node": "^22.14.0",
     "allure-commandline": "^2.34.1",

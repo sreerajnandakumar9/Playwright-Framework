@@ -1,0 +1,49 @@
+Element not found or not visible within the timeout: locator.waitFor: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('div li').first() to be visible
+
+    at CartPage.verifyProductInCart (C:\Playwright-Framework\E2ECart\tests\Pages\AddCart.spec.ts:33:49)
+    at C:\Playwright-Framework\E2ECart\tests\Pages\Order.spec.ts:86:27 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@16',
+    location: {
+      file: 'C:\\Playwright-Framework\\E2ECart\\tests\\Pages\\AddCart.spec.ts',
+      line: 33,
+      column: 49,
+      function: 'CartPage.verifyProductInCart'
+    },
+    category: 'pw:api',
+    title: "Wait for selector locator('div li').first()",
+    apiName: 'locator.waitFor',
+    params: {
+      selector: 'div li >> nth=0',
+      strict: true,
+      omitReturnValue: true,
+      state: 'visible',
+      timeout: 10000
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@16',
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1755798973938,
+    error: {
+      message: 'Error: locator.waitFor: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('div li').first() to be visible\x1B[22m\n",
+      stack: 'Error: locator.waitFor: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('div li').first() to be visible\x1B[22m\n" +
+        '\n' +
+        '    at CartPage.verifyProductInCart (C:\\Playwright-Framework\\E2ECart\\tests\\Pages\\AddCart.spec.ts:33:49)\n' +
+        '    at C:\\Playwright-Framework\\E2ECart\\tests\\Pages\\Order.spec.ts:86:27',
+      cause: undefined
+    }
+  }
+}

@@ -19,11 +19,13 @@ export class CartPage {
 
   async addProductToCart(productName: string) {
     try {
-      const products = this.page.locator(this.productCard);
+      const products = this.page.locator(this.productCard,);
       const count = await products.count();
 
       for (let i = 0; i < count; i++) {
         if ((await products.nth(i).locator('b').textContent()) === productName) {
+               await this.page.t; // Adding a delay to ensure the page is fully loaded
+
           await products.nth(i).locator('text= Add To Cart').click();
           console.log(`${productName} added to cart`);
           return;
