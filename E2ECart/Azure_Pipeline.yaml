@@ -24,7 +24,7 @@ steps:
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      npx playwright test -c playwright.service.config.ts --workers=20
+       npm run e2e
     addSpnToEnvironment: true
 
 - task: PublishPipelineArtifact@1
