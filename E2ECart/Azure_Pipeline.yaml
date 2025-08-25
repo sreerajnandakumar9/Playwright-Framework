@@ -1,3 +1,10 @@
+trigger:
+- main   # or whichever branch you want to trigger on
+
+pool:
+  vmImage: 'ubuntu-latest'
+  
+steps:
 - task: PowerShell@2
   enabled: true
   displayName: "Install dependencies"
