@@ -4,7 +4,7 @@
   inputs:
     targetType: 'inline'
     script: 'npm ci'
-    workingDirectory: path/to/playwright/folder # update accordingly
+    workingDirectory: tests # update accordingly
 
 - task: AzureCLI@2
   displayName: Run Playwright Test  
@@ -23,6 +23,6 @@
 - task: PublishPipelineArtifact@1
   displayName: Upload Playwright report
   inputs:
-    targetPath: path/to/playwright/folder/playwright-report/ # update accordingly
+    targetPath: E2ECart\playwright-report # update accordingly
     artifact: 'Playwright tests'
     publishLocation: 'pipeline'
